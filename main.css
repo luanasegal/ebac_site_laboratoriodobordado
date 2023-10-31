@@ -1,0 +1,207 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button {
+      font-family: 'Oswald', sans-serif;
+      font-weight: Medium 500;
+}
+
+body,
+input,
+textarea {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: Light 300;
+}
+
+header {
+      padding: 16px;
+      background-color: #88c4dd;
+      color: #19231a;
+}
+
+header nav li {
+      display: inline;
+      margin-left: 16px;
+      font-size: 18px;
+}
+
+header nav li a {
+      color: #19231a;
+      text-decoration: none;
+}
+
+.container {
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+}
+
+header .container,
+section .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+body {
+      background-color: #f2f3f4;
+}
+
+section .container {
+      align-items: flex-start;
+}
+
+section {
+      padding: 24px 0;
+}
+
+section h2 {
+      margin-bottom: 16px;
+}
+
+section {
+      color: #19231a;
+}
+
+section p {
+      margin-bottom: 8px;
+}
+
+.embroidery-goku {
+      margin-top: 40px;
+      margin-right: 28px;
+      max-width: 400px;
+}
+
+#subscription {
+      margin-top: -220px;
+      margin-left: 740px;
+}
+
+#subscription .container {
+      display: block;
+      margin-top: -20px;
+}
+
+.subscription-methods {
+      display: flex;
+      justify-content: space-between;
+}
+
+.social-links img {
+      height: 24px;
+}
+
+.social-links li {
+      display: inline;
+      margin-right: 8px;
+}
+
+.social-links li a {
+      text-decoration: none;
+}
+
+#social .container {
+      display: inline;
+      justify-content: space-between;
+}
+
+.social {
+      display: flex;
+      justify-content: space-between;
+}
+
+#email-contact {
+      display: block;
+      justify-content: space-between;
+}
+
+#whatsapp-contact {
+      display: block;
+      align-items: center;
+      justify-content: space-between;
+}
+
+#contact-info h3 {
+      margin-bottom: 16px;
+}
+
+#contact-info p {
+      text-align: center;
+}
+
+.container {
+      display: flex;
+      justify-content: space-between;
+}
+
+#social,
+#email-contact,
+#whatsapp-contact {
+      width: 33.33%;
+}
+
+#social h3,
+#email-contact h3,
+#whatsapp-contact h3 {
+      font-family: 'Oswald', sans-serif;
+      margin: 10px 0;
+}
+
+#social p,
+#email-contact p,
+#whatsapp-contact p {
+      margin: 5px 0;
+}
+
+#social,
+#email-contact,
+#whatsapp-contact {
+      margin: 20px;
+}
+
+form input,
+form textarea,
+form button {
+      display: block;
+      width: 320px;
+      margin-bottom: 8px;
+      padding: 14px;
+      font-size: 16px;
+      font-family: 'Nunito Sans', sans-serif;
+      border-radius: 15px;
+      box-shadow: 0 0 0 0;
+      border: 0 none;
+      outline: 0;
+}
+
+form textarea {
+      resize: none;
+      height: 180px;
+}
+
+section h3 {
+      margin-bottom: 16px;
+}
+
+form button {
+      background-color: #f95738;
+      color: #ffffff;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: medium;
+}
+
+footer {
+      padding: 16px;
+      background-color: #88c4dd;
+      color: #19231a;
+}
