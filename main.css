@@ -1,7 +1,7 @@
 * {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      box-sizing:border-box;
 }
 
 header,
@@ -9,18 +9,19 @@ section h2,
 section h3,
 form button {
       font-family: 'Oswald', sans-serif;
-      font-weight: Medium 500;
+      font-weight: 600;
+      display: flex;
 }
 
 body,
 input,
 textarea {
       font-family: 'Nunito Sans', sans-serif;
-      font-weight: Light 300;
+      font-weight: 300;
 }
 
 header {
-      padding: 16px;
+      padding: 18px 0;
       background-color: #88c4dd;
       color: #19231a;
 }
@@ -36,8 +37,9 @@ header nav li a {
       text-decoration: none;
 }
 
-.container {
-      max-width: 900px;
+.container,
+h2 {
+      max-width: 1180px;
       width: 100%;
       margin: 0 auto;
 }
@@ -76,12 +78,13 @@ section p {
 .embroidery-goku {
       margin-top: 40px;
       margin-right: 28px;
-      max-width: 400px;
+      max-width: 450px;
 }
 
 #subscription {
-      margin-top: -220px;
-      margin-left: 740px;
+      display: block;
+      margin-top: -250px;
+      margin-left: 650px;
 }
 
 #subscription .container {
@@ -89,9 +92,16 @@ section p {
       margin-top: -20px;
 }
 
-.subscription-methods {
-      display: flex;
+#contact-methods h3 {
+      margin-bottom: 16px;
       justify-content: space-between;
+}
+
+#contact-methods {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 }
 
 .social-links img {
@@ -114,17 +124,6 @@ section p {
 
 .social {
       display: flex;
-      justify-content: space-between;
-}
-
-#email-contact {
-      display: block;
-      justify-content: space-between;
-}
-
-#whatsapp-contact {
-      display: block;
-      align-items: center;
       justify-content: space-between;
 }
 
@@ -169,7 +168,7 @@ section p {
 form input,
 form textarea,
 form button {
-      display: block;
+      display: flex;
       width: 320px;
       margin-bottom: 8px;
       padding: 14px;
