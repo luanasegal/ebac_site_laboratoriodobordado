@@ -1,7 +1,14 @@
 * {
       margin: 0;
       padding: 0;
-      box-sizing:border-box;
+      box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 300;
 }
 
 header,
@@ -10,14 +17,6 @@ section h3,
 form button {
       font-family: 'Oswald', sans-serif;
       font-weight: 600;
-      display: flex;
-}
-
-body,
-input,
-textarea {
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 300;
 }
 
 header {
@@ -48,7 +47,7 @@ header .container,
 section .container {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      gap: 16px;
 }
 
 body {
@@ -75,21 +74,48 @@ section p {
       margin-bottom: 8px;
 }
 
-.embroidery-goku {
-      margin-top: 40px;
-      margin-right: 28px;
-      max-width: 450px;
+section h3 {
+      margin-bottom: 16px;
 }
 
-#subscription {
-      display: block;
-      margin-top: -250px;
-      margin-left: 650px;
+.embroidery-goku {
+      max-width: 415px;
+}
+
+.about-text {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      margin-top: 65px;
+}
+
+#about-container {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
 }
 
 #subscription .container {
-      display: block;
-      margin-top: -20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+}
+
+#subscription {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      background-color: #88c4dd;
+}
+
+#subscription form {
+      max-width: 320px;
+      width: 100%;
+      margin-top: -10px;
 }
 
 #contact-methods h3 {
@@ -104,17 +130,29 @@ section p {
       justify-content: center;
 }
 
-.social-links img {
-      height: 24px;
+.social-container {
+      margin-top: 20px;
+      margin-bottom: 20px;
+}
+
+.social-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
 }
 
 .social-links li {
-      display: inline;
+      display: inline-block;
       margin-right: 8px;
 }
 
 .social-links li a {
       text-decoration: none;
+      display: block;
+}
+
+.social-links img {
+      height: 24px;
 }
 
 #social .container {
@@ -129,10 +167,6 @@ section p {
 
 #contact-info h3 {
       margin-bottom: 16px;
-}
-
-#contact-info p {
-      text-align: center;
 }
 
 .container {
@@ -165,10 +199,24 @@ section p {
       margin: 20px;
 }
 
+#about h2,
+#subscription h2,
+#subscription h3,
+#subscription form button,
+#contact-info p,
+.social-container,
+.social-links li,
+#social h3,
+#email-contact h3,
+#whatsapp-contact h3,
+#email-contact p,
+#whatsapp-contact p {
+      text-align: center;
+}
+
 form input,
 form textarea,
 form button {
-      display: flex;
       width: 320px;
       margin-bottom: 8px;
       padding: 14px;
@@ -185,22 +233,20 @@ form textarea {
       height: 180px;
 }
 
-section h3 {
-      margin-bottom: 16px;
-}
-
 form button {
       background-color: #f95738;
       color: #ffffff;
-      font-size: 20px;
-      border: none;
       cursor: pointer;
       font-weight: bold;
       font-size: medium;
+      text-align: center;
+      width: 100%;
 }
 
 footer {
-      padding: 16px;
+      display: flex;
       background-color: #88c4dd;
       color: #19231a;
+      padding: 16px;
+      text-align: center;
 }
